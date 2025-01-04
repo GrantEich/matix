@@ -140,13 +140,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Crossmint
 - All other contributors and sponsors
 
-## ⚡️ Quick Links
-
-- [Documentation](docs/README.md)
-- [API Reference](docs/API.md)
-- [Contributing Guidelines](CONTRIBUTING.md)
-- [Security Policy](SECURITY.md)
-
 ---
 
 Built for the Solana AI Agent Hackathon 2024 🚀
