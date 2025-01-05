@@ -2,6 +2,8 @@
 
 A next-generation Solana bot with integrated AI capabilities for intelligent transaction analysis, portfolio management, and market insights.
 
+![](banner4.png)
+
 ## 🌟 Features
 
 ### AI Integration
