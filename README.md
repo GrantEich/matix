@@ -1,4 +1,4 @@
-# TAU. An AI-Powered Solana Bot
+# IOTA. An AI-Powered Solana Bot
 
 A next-generation Solana bot with integrated AI capabilities for intelligent transaction analysis, portfolio management, and market insights.
 
@@ -40,10 +40,10 @@ A next-generation Solana bot with integrated AI capabilities for intelligent tra
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/HidayatAriya/Tau-AI.git
+git clone https://github.com/HidayatAriya/IOTA.git
 
 # Navigate to the project directory
-cd Tau-AI
+cd IOTA
 
 # Install dependencies
 npm install
