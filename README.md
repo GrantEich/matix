@@ -1,184 +1,115 @@
-# IOTA. An AI-Powered Solana Bot
+# Matix 🤖💬
 
-A next-generation Solana bot with integrated AI capabilities for intelligent transaction analysis, portfolio management, and market insights.
+## 🌍 Overview
 
-![](banner4.png)
+Matix is an on chain AI agent framework that allows anyone to launch AI agents on chain. Matix controls Twitter accounts and cryptocurrency wallets and can autonomously post to socials and interact with smart contracts.
 
-## 🌟 Features
+### Use cases for Matix
 
-### AI Integration
-- Real-time transaction analysis and risk assessment
-- Market insights and trading suggestions
-- Portfolio optimization recommendations
-- Intelligent wallet management
+- 🤖 Chatbots
+- 📈 Autonomous traders
+- 💼 Portfolio management
+- 📣 Marketing
+- 👤✨ Launching your digital twin
 
-### Bot Features
-- Compressed token support (zkCompression)
-- Multi-token management
-- Integrated DEX swaps
-- Transaction history with AI analysis
-- Portfolio analytics
-- NFT support
+## 🛠️ Features
 
-### Technical Features
-- Built with Next.js 13+ (App Router)
-- TypeScript for type safety
-- Tailwind CSS for styling
-- Integration with major Solana protocols
-  - Jupiter for swaps
-  - Helius for RPC
-  - Crossmint for wallet management
-  - Meteora/Orca for LP management
+### Socials integrations
 
-## 🚀 Getting Started
+- 🐦 Twitter feed analysis and interaction
+- 📱 Telegram message handling
+- 💬 Slack triggers
+- _📢 [soon] Discord connector_
+
+### Blockchain integrations
+
+- 💰 Matix blockchain account integration (balance tracking, token launching, trading)
+- 🔒 _[soon] Launch in a TEE for full agent wallet control_
+- 🌐 _[soon] Extensibility to any blockchain (Solana, Base, etc.)_
+
+### Flexible and extensible model support
+
+- 🧠 Bring your own model (for top level planning or interactions)
+- 📦 Ready-to-use models for launching an agent in <5 minutes
+- 🔧 Agent prompting framework
+- 🧪 Testing environment for agents (local, collaborative)
+- ⏰ Automated hourly background tasks
+
+## 🚀 Launch your Echo
 
 ### Prerequisites
-- Node.js 18+
-- npm/pnpm
-- A Solana wallet (Phantom, Solflare, etc.)
 
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/HidayatAriya/IOTA.git
-
-# Navigate to the project directory
-cd IOTA
-
-# Install dependencies
-npm install
-
-# Set up environment variables
-cp .env.example .env.local
-
-# Start development server
-npm run dev
+```
+Python 3.11.x
 ```
 
-### Environment Variables
-Create a `.env.local` file with the following:
-```env
-# Solana Network Configuration
-NEXT_PUBLIC_SOLANA_NETWORK=devnet
-NEXT_PUBLIC_LOCAL_RPC_URL=http://localhost:8899
-NEXT_PUBLIC_DEVNET_RPC_URL=https://api.devnet.solana.com
-NEXT_PUBLIC_MAINNET_RPC_URL=https://api.mainnet-beta.solana.com
+### Requirements
 
-# AI Service Configuration
-NEXT_PUBLIC_AI_SERVICE_URL=your_ai_service_url
-NEXT_PUBLIC_AI_SERVICE_KEY=your_ai_service_key
+See `pyproject.toml` for full dependency list
 
-# Wallet Configuration
-NEXT_PUBLIC_WALLET_AUTOCONNECT=false
-```
+### Setup
 
-## 📖 Project Structure
-```
-src/
-├── app/              # Next.js 13 app directory
-├── components/       # React components
-├── lib/             # Core libraries
-│   ├── ai/          # AI integration
-│   ├── wallet/      # Wallet functionality
-│   └── utils/       # Utilities
-├── services/        # External services
-├── hooks/           # Custom React hooks
-└── types/           # TypeScript types
-```
-
-## 🛠 Development
-
-### Available Scripts
-```bash
-# Development
-npm run dev
-
-# Build
-npm run build
-
-# Production
-npm run build:prod
-npm start
-
-# Linting
-npm run lint
-npm run lint:fix
-```
-
-### Key Technologies
-- Next.js 13+
-- TypeScript
-- Tailwind CSS
-- Solana Web3.js
-- AI Integration (Claude/GPT)
-- shadcn/ui components
-
-## 🔐 Security
-
-This bot implements several security features:
-- AI-powered transaction analysis
-- Multi-signature support via Lit Protocol
-- Trusted Execution Environment (TEE) verification
-- Error boundaries and recovery mechanisms
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgements
-
-- Solana Foundation
-- Anthropic (Claude AI)
-- Jupiter Aggregator
-- Helius
-- Crossmint
-- All other contributors and sponsors
-
----
-
-Built for the Solana AI Agent Hackathon 2024 🚀
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+1. Create and activate your own virtual environment. We recommend using [Miniconda](https://docs.anaconda.com/miniconda/install/).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+conda create --name matix python=3.11
+conda activate matix
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+   `make install`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This will install `matix` as a local package and install all necessary dependencies.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Set up environment variables
+   Create a `.env` file in the echos_lab directory with necessary credentials for:
 
-## Learn More
+- Twitter username / password
+- Telegram bot token and API credentials
+- Anthropic API key (for AI model functionality)
+- Openpipe API token (for additional AI finetuning functionality)
+- Replicate API token (for image generation)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+Key Components:
+`crypto/`: handles all cryptocurrency operations including trading, token creation, and price tracking
+`engines/`: core AI logic and decision making, manages bot personality and responses
+`telegram/`: telegram bot operations (direct message and group interactions)
+`twitter/`: twitter automation and social media interactions
+`slack/`: custom slack triggers and integrations
+`db/`: conversation history storage
 
-## Deploy on Vercel
+Configuration Files:
+.env: Environment variables and API keys
+requirements.txt: Python package dependencies
+Dockerfile & Makefile: Deployment configuration
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Debugging Locally
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Add tweet links to config file.
+
+2. Generate examples from tweet data:
+
+   ```
+   matix testing generate-examples
+   ```
+
+   Note: Run this whenever the list of tweets changes.
+
+3. Generate responses:
+
+   ```
+   matix testing generate-responses
+   ```
+
+4. Review output file:
+   - Contents include:
+     - Current timestamp
+     - Current commit hash
+     - Tweet thread contents
+     - Tweet analysis and response for each tweet
+     - Prompt used
