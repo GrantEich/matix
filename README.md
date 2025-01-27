@@ -40,35 +40,31 @@ Matix is an on chain AI agent framework that allows anyone to launch AI agents o
 ### Prerequisites
 
 ```
-Python 3.11.x
+Next.js
 ```
 
 ### Requirements
 
-See `pyproject.toml` for full dependency list
+[`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app)
 
 ### Setup
 
-1. Create and activate your own virtual environment. We recommend using [Miniconda](https://docs.anaconda.com/miniconda/install/).
+1. First, run the development server.
 
 ```bash
-conda create --name matix python=3.11
-conda activate matix
+npm run dev
 ```
 
-2. Install dependencies:
-   `make install`
-
-This will install `matix` as a local package and install all necessary dependencies.
-
-3. Set up environment variables
-   Create a `.env` file in the echos_lab directory with necessary credentials for:
+2. Set up environment variables
+   Create a `.env` file in the matix directory with necessary credentials for:
 
 - Twitter username / password
 - Telegram bot token and API credentials
 - Anthropic API key (for AI model functionality)
 - Openpipe API token (for additional AI finetuning functionality)
 - Replicate API token (for image generation)
+
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
 
 
 ### Project Structure
